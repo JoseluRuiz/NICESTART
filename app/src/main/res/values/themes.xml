@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Interfaces" parent="Base.Theme.Interfaces" />
+    <style name="Theme.Interfaces.ActionBar" parent="Theme.MaterialComponents.DayNight" />
 </resources>
