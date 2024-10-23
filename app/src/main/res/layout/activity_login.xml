@@ -16,17 +16,20 @@
         android:id="@+id/pantalla"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"
         android:alpha="0.5"
-        />
+        android:scaleType="fitStart"
+        android:src="@drawable/girl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pantalla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pantalla">
 
     </View>
 
@@ -57,17 +60,10 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Usuario"/>
-
+            android:hint="Usuario" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@id/guideline1"
-        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tf2"
@@ -85,31 +81,42 @@
             android:alpha="0.6"
             android:background="@color/white"
             android:hint="Contraseña"
-            android:maxLines="1"
-            />
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
         android:id="@+id/uno"
-        android:text="Iniciar Sesion"
+        style="@style/buttonflat"
+        android:onClick="openMain"
+        android:text="LOGIN"
+        app:cornerRadius="0sp"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/tf2"
-        app:cornerRadius="0sp"
-        android:onClick="openLogin"
-        style="@style/buttonflat" />
+        app:layout_constraintTop_toBottomOf="@id/tf2" />
 
     <Button
         android:id="@+id/dos"
         style="@style/buttonOutlined"
         android:onClick="openSignUp"
-        android:text="Registrarse"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
         app:cornerRadius="0sp"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/uno"
         app:strokeColor="@color/white" />
+
+    <Button
+        android:id="@+id/botonnuevo"
+        style="@style/buttonflat2"
+        android:layout_height="60dp"
+        android:onClick="openTerms"
+        android:text="Ver Términos y Condiciones"
+        app:cornerRadius="0sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/dos" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -124,6 +131,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
