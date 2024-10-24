@@ -40,4 +40,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    annotationProcessor("com.github.bumptech.glide:compiler")
+    implementation("com.github.bumptech.glide:glide")
 }
