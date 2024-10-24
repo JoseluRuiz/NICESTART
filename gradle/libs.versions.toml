@@ -9,8 +9,12 @@ activity = "1.9.2"
 constraintlayout = "2.1.4"
 
 [libraries]
+com-github-bumptech-glide-glide = { module = "com.github.bumptech.glide:glide" }
 compiler = { module = "com.github.bumptech.glide:compiler" }
+github-compiler = { module = "com.github.bumptech.glide:compiler" }
+github-glide = { module = "com.github.bumptech.glide:glide" }
 glide = { module = "com.github.bumptech.glide:glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

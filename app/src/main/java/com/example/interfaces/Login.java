@@ -1,18 +1,14 @@
 package com.example.interfaces;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-
 
 public class Login extends AppCompatActivity {
 
@@ -27,14 +23,6 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-        ImageView mGirl = findViewById(R.id.pantalla);
-
-        .with(this)
-                .load("R.drawable.girl")
-                .transition(DrawableTransitionOptions.withCrossFade(2000))
-                .circleCrop()
-                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.black)))
-                .into(mGirl);
     }
     public void openSignUp (View v)
     {
