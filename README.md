@@ -26,7 +26,26 @@ El tercer botón es simplemente una adición extra para poder ejecutar un MERGE 
 
 En cuanto al contenido de los XML, tiene visible los diferentes objetos usados en cada pantalla.
 
-En el view general se eligen 
+Los XML de Login "activity_login.xml" y SignUp"activity_signup.xml" constan de:
+
+Un view general donde se eligen altura y anchura, orientación y los contraints para el ajuste.
+Dos ImageViews una para el logo y otro para la imagen de fondo. Se eligen las dimensiones, la transparencia y los constraints. En este caso la imagen de fondo posee una peculiaridad, a diferencia del logo, se referencia a la imagen desde el "Login.java" mediante las librerías GLIDE.
+Dos EditTexts dentro de un FieldSet cada uno. Se eligen las dimensiones y las constraints para mantenerlos entre los GuideLines.
+Dos botones. Se eligen dimensiones, constraints y colores, añadiendo funcionalidades particulares como la función "onclick" y el estilo. La función "onclick" sirve para que cuando lo presiones te ejecute cierta función y realice cierta acción (se puede ver en "styles.xml"). Y el style es para establecer las carecterísticas del botón.
+Dos GuideLines para mantener en una posición fija los botones y los fieldsets.
+
+Los java De "Login.java" y "SignUp.java" constan de:
+"Desde aquí se puede mostrar la imagen del fondo."
+La declaración de el ImageView.
+El uso de la librería GLIDE con la cual podemos referirnos a la imagen y hacer que se muestre en pantalla, excluyendo el "src" en el XML.
+Los métodos para hacer la transición entre pestañas, usando Intent.
+
+En el AndroidManifest se delcaran las actividades con la clase referida, en caso de querer retornar a cierta pestaña, hay que hacer uso del "parentActivityName".
+En el Themes.xml se declaran las barras de acción, que vienen a ser las barras superiores que aparecen en algunas pestañas.
+En el gradle se introducen las librerías.
+
+
+
 
 
 
