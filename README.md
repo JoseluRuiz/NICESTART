@@ -7,9 +7,9 @@ Está conformado por dos cuadros de texto editables, tres botones, un logo, una 
 Los textos editables son "EditText" introducidos dentro de un "Fieldset" a su vez ajustados entre dos "GuideLines".
 
 Los 3 botones tienen funciones distintas: 
-El primer botón es para el inicio de sesión, tendrías que introducir tus datos para poder iniciar sesión. A su vez ese boton te llevaría a la pestaña de "Main" la cual contiene una barra en la parte superior de la pantalla y en este caso solo se ve la pantalla blanca debido a que no hay contenido.
+El primer botón es para el inicio de sesión, tendrías que introducir tus datos para poder iniciar sesión. A su vez ese boton te llevaría a la pestaña de "Main" la cual contiene una barra en la parte superior de la pantalla, una imagen de fondo en circular (manejado desde Main.java) y un gradiente.
 
-![main](https://github.com/user-attachments/assets/8080d549-e6ce-4071-8744-6180498e6a49)
+![main](https://github.com/user-attachments/assets/284991bb-cbde-45aa-9c79-3d63e8239d01)
 
 El segundo botón es para el registro, al presionarlo te llevará a la pestaña de "SignUp", en esta pestaña se aprecia una estructura parecida a la de "Login" con el logo, dos botones, una imagen de fondo, un gradiente, una barra inferior y una barra superior que contiene una flecha, con la flecha puedes retornar hacia atrás y situarte en la pestaña "Login".
 
