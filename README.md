@@ -11,7 +11,7 @@ El primer botón es para el inicio de sesión, tendrías que introducir tus dato
 
 ![main](https://github.com/user-attachments/assets/8080d549-e6ce-4071-8744-6180498e6a49)
 
-El segundo botón es para el resgistro, al presionarlo te llevará a la pestaña de "SignUp", en esta pestaña se aprecia una estructura parecida a la de "Login" con el logo, dos botones, una imagen de fondo, un gradiente, una barra inferior y una barra superior que contiene una flecha, con la flecha puedes retornar hacia atrás y situarte en la pestaña "Login".
+El segundo botón es para el registro, al presionarlo te llevará a la pestaña de "SignUp", en esta pestaña se aprecia una estructura parecida a la de "Login" con el logo, dos botones, una imagen de fondo, un gradiente, una barra inferior y una barra superior que contiene una flecha, con la flecha puedes retornar hacia atrás y situarte en la pestaña "Login".
 
 Las funcionalidades son practicamente las mismas, el primer botón sirve para inciar sesión por lo tanto, te conducirá a la pestaña de "Main" y el segundo boton de Cancelar es otra manera de redirigirte a la pestaña de "Login".
 
@@ -40,9 +40,9 @@ La declaración de el ImageView.
 El uso de la librería GLIDE con la cual podemos referirnos a la imagen y hacer que se muestre en pantalla, excluyendo el "src" en el XML.
 Los métodos para hacer la transición entre pestañas, usando Intent.
 
-En el AndroidManifest se delcaran las actividades con la clase referida, en caso de querer retornar a cierta pestaña, hay que hacer uso del "parentActivityName".
+En el AndroidManifest se declaran las actividades con la clase referida, en caso de querer retornar a cierta pestaña, hay que hacer uso del "parentActivityName".
 En el Themes.xml se declaran las barras de acción, que vienen a ser las barras superiores que aparecen en algunas pestañas.
-En el gradle se introducen las librerías.
+En gradle, específicamente build.gradle.kts(Module:app) se introducen las librerías.
 
 
 
