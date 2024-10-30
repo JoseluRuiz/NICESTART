@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<alpha xmlns:android="http://schemas.android.com/apk/res/android"
-android:duration="100"
-android:fillAfter="true"
-android:fromAlpha="0.0"
-android:repeatCount="infinite"
-android:repeatMode="reverse"
-android:toAlpha="1.0" >
-</alpha>
+<set  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:duration="100"
+        android:fillAfter="true"
+        android:fromAlpha="0.0"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:toAlpha="1.0" >
+    </alpha>
+    <scale
+        android:duration="5000"
+        android:fromXScale="3"
+        android:fromYScale="3"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.5"
+        android:toYScale="0.5">
+    </scale>
+    <translate
+        android:fromXDelta="0%p"
+        android:fromYDelta="75%p"
+        android:duration="3000">
+    </translate>
+</set>

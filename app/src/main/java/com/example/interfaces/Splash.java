@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -25,11 +26,21 @@ public class Splash extends AppCompatActivity {
 
         ImageView thunder = findViewById(R.id.logosplash);
 
-        Animation anim = AnimationUtils.loadAnimation(this, R.anim.blink);
-        thunder.startAnimation(anim);
+        Animation animb = AnimationUtils.loadAnimation(this, R.anim.blink);
+        thunder.startAnimation(animb);
 
+        TextView title = findViewById(R.id.titulo);
 
-        ImageView mSea = findViewById(R.id.fondo);
+        Animation animz = AnimationUtils.loadAnimation(this, R.anim.zoomout);
+        title.startAnimation(animz);
+
+        Animation animr = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        title.startAnimation(animr);
+
+        ImageView back = findViewById(R.id.fondo);
+
+        Animation animm = AnimationUtils.loadAnimation(this, R.anim.move);
+        thunder.startAnimation(animm);
 
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1592807749311-c1d79ff9082f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
@@ -37,7 +48,7 @@ public class Splash extends AppCompatActivity {
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.black)))
-                .into(mSea);
+                .into(back);
 
     }
 
