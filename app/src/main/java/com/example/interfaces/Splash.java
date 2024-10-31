@@ -31,16 +31,12 @@ public class Splash extends AppCompatActivity {
 
         TextView title = findViewById(R.id.titulo);
 
-        Animation animz = AnimationUtils.loadAnimation(this, R.anim.zoomout);
-        title.startAnimation(animz);
-
         Animation animr = AnimationUtils.loadAnimation(this, R.anim.rotate);
         title.startAnimation(animr);
 
         ImageView back = findViewById(R.id.fondo);
 
-        Animation animm = AnimationUtils.loadAnimation(this, R.anim.move);
-        thunder.startAnimation(animm);
+
 
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1592807749311-c1d79ff9082f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
