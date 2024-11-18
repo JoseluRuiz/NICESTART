@@ -41,6 +41,8 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    implementation(libs.swiperefreshlayout)
+
     implementation(libs.github.glide)
     annotationProcessor(libs.glide.compiler)
     implementation(libs.lottie)
