@@ -46,16 +46,29 @@ El primer botón es para el inicio de sesión, tendrías que introducir tus dato
 
 ![main](https://github.com/user-attachments/assets/284991bb-cbde-45aa-9c79-3d63e8239d01)
 
-El segundo botón es para el registro, al presionarlo te llevará a la pestaña de "SignUp", en esta pestaña se aprecia una estructura parecida a la de "Login" con el logo, dos botones, una imagen de fondo, un gradiente, una barra inferior y una barra superior que contiene una flecha, con la flecha puedes retornar hacia atrás y situarte en la pestaña "Login".
+El segundo botón es para el registro, al presionarlo te llevará a la pestaña de "SignUp". 
 
-Las funcionalidades son practicamente las mismas, el primer botón sirve para inciar sesión por lo tanto, te conducirá a la pestaña de "Main" y el segundo boton de Cancelar es otra manera de redirigirte a la pestaña de "Login".
+--activity_signup.xml--
 
 ![signup](https://github.com/user-attachments/assets/06c019b5-fe51-4488-a5f4-e978c131ebb2)
 
-El tercer botón es simplemente una adición extra para poder ejecutar un MERGE sobre la rama Master, si lo presionas te conducirá a una pestaña alternativa llamada "Terms".
+En esta pestaña se aprecia una estructura parecida a la de "activity_login.xml".
+
+La imagen de fondo y el logo,
+
+![ivsignup](https://github.com/user-attachments/assets/39a751a5-9b3a-46b1-aef3-41b2799567d7)
+
+cuadros de texto dentro de campos de texto,
+
+![etsignup](https://github.com/user-attachments/assets/948a8563-9ee5-4def-9a1d-b51a0aba7f11)
+
+dos botones (el primer botón sirve para inciar sesión por lo tanto, volverá a mostrar "activity_main.xml" y el segundo boton de Cancelar es otra manera de redirigirte a  "activity_login.xml"),
+
+![btsignup](https://github.com/user-attachments/assets/5c9c0628-bed3-445a-81af-f7cfc6ecfbf7)
+
+El tercer botón es simplemente una adición extra para poder ejecutar un MERGE sobre la rama Master, si lo presionas te conducirá a una pestaña alternativa llamada "activity_terms.xml".
 
 ![terms](https://github.com/user-attachments/assets/6d82fbff-abf6-4f1a-9cda-1f3a31be1579)
-
 
 
 --Login.java--
@@ -69,6 +82,12 @@ Se utiliza la clase Intent para realizar dicho cambio.
 
 ![metodosloginjava](https://github.com/user-attachments/assets/2f2cdde6-c598-41fa-af35-dc045dabe433)
 
+--SignUp.java--
+
+Esta actividad contiene un GLIDE para mostrar la imagen y los métodos para las transiciones de pantallas.
+
+![glidemetodossignup](https://github.com/user-attachments/assets/f592bb55-37e9-40f5-bfd8-2489d1fb4a78)
+
 
 -- AndroidManifest.xml--
 En el AndroidManifest se declaran las actividades con la clase referida, en caso de querer retornar a cierta pestaña, hay que hacer uso del "parentActivityName".
@@ -80,20 +99,16 @@ En la carpeta VALUES creamos Themes.xml donde se declaran las barras de acción,
 ![temaslogin](https://github.com/user-attachments/assets/bf7ca899-ed8a-44a5-bd11-933b84824a56)
 
 
-
-
 https://github.com/user-attachments/assets/8ab40b93-2fbb-48c5-ae40-05f89cb8537d
 
+--Pantalla de carga o activity_splash.xml
 
 Tras implementar unas librerías la pantalla de carga se ve así.
 Se ha realizado con la librería SPLASH.
 
 Se crea la clase Splash.java y su layout correspondiente.
-El activity_splash.xml contendrá las imagenes e iconos que aparecerán en la pantalla de carga.
 
-El Splash.java contiene lo siguiente: 
-
-
+--Splash.java--
 
 Las animaciones implementadas en el logo son las siguientes:
 
@@ -106,7 +121,10 @@ Hay una etiqueta SET para poder establecer todos las animaciones al mismo objeto
 
 Hay una etiqueta SET para poder establecer todos las animaciones al mismo objeto. Contiene la etiqueta ROTATE que sirve para rotar un objeto de un punto a otro sobre un eje, contiene los atributos   duration, fromDegrees - toDegrees, ahí se fija de que grado a que grado va a rotar, pivotX,pivotY para establecer el eje en el cual se va a rotar y repeatMode, repeatCount numeros de repeticiones y modo. Acompañado de una etiqueta SCALE que en este caso será un "zoom in".
 
+--activity_splash.xml--
+Contiene las imagenes, iconos y textos que aparecerán en la pantalla de carga.
 
+![ivsplash](https://github.com/user-attachments/assets/6c07f364-42bc-420f-a2a9-58b3fcccd021)
 
 
 
