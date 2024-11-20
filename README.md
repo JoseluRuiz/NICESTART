@@ -45,6 +45,11 @@ En el Themes.xml se declaran las barras de acción, que vienen a ser las barras 
 En gradle, específicamente build.gradle.kts(Module:app) se introducen las librerías.
 
 
+https://github.com/user-attachments/assets/8ab40b93-2fbb-48c5-ae40-05f89cb8537d
+
+
+Tras implementar unas librerías la pantalla de carga se ve así.
+Se ha realizado con la librería SPLASH 
 
 
 
