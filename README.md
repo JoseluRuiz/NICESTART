@@ -126,6 +126,10 @@ Contiene las imagenes, iconos y textos que aparecerán en la pantalla de carga.
 
 ![ivsplash](https://github.com/user-attachments/assets/6c07f364-42bc-420f-a2a9-58b3fcccd021)
 
+También se producen cambios en el AndroidManifest.xml
+Se añaden las características del inicio de la aplacación.
+
+![manifestsplash](https://github.com/user-attachments/assets/69770a0f-aead-409d-b7da-27e80b584ed6)
 
 
 
