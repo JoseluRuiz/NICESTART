@@ -12,6 +12,29 @@
         android:id="@+id/item1"
         android:title="Copy"
         android:icon="@drawable/copiar_foreground"
-        app:showAsAction="ifRoom"
-        />
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/item3"
+                android:title="Bottom app bar"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/item4"
+                android:title="Bottom navigation"
+                app:showAsAction="never" />
+
+
+            <item
+                android:id="@+id/item5"
+                android:title="Signout"
+                app:showAsAction="never"
+                android:icon="@drawable/iconollave_foreground"/>
+
+        </menu>
+
+    </item>
+
 </menu>
