@@ -87,12 +87,12 @@ public class Main extends AppCompatActivity {
 
         if(id == R.id.item1)
         {
-            Toast toast = Toast.makeText(this, "Item copied", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
         }
         if(id == R.id.item2)
         {
-            Toast toast2 = Toast.makeText(this, "Downloading item...", Toast.LENGTH_LONG);
+            Toast toast2 = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast2.show();
         }
         if (id == R.id.item3) {
@@ -124,16 +124,13 @@ public class Main extends AppCompatActivity {
 
         if(id == R.id.item1)
         {
-            Toast toast = Toast.makeText(this,"Infecting",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this,"Item copied",Toast.LENGTH_LONG);
             toast.show();
         }
         if(id == R.id.item2)
         {
-            Toast toast = Toast.makeText(this," Fixing",Toast.LENGTH_LONG);
-            toast.show();
-
-            Intent intent = new Intent(this, Profile.class);
-            startActivity(intent);
+            Toast toast2 = Toast.makeText(this," Downloading item...",Toast.LENGTH_LONG);
+            toast2.show();
         }
         return super.onOptionsItemSelected(item);
     }

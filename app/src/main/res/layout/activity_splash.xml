@@ -34,7 +34,7 @@
         android:fontFamily="@font/barriecito"
         android:text="NICESTART"
         android:textColor="@android:color/white"
-        android:textSize="50sp"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="@id/logosplash"
         app:layout_constraintStart_toStartOf="@id/logosplash"
         app:layout_constraintTop_toBottomOf="@id/logosplash">
