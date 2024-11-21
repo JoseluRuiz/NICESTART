@@ -156,6 +156,11 @@ Ahora le vamos a agregar funcionalidades a la barra superior mostrada en el Main
 Dicha carpeta incluirá el tipo de menu y su estructura.
 En este caso hemos creado dos tipos de menu: Uno contextual o otro representa menu de la barra superior.
 
+--menu_context.xml--
+
+![menucontext](https://github.com/user-attachments/assets/a94d64da-a273-4b14-a26d-2b14b780e7f8)
+
+
 
 
 
