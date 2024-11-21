@@ -94,17 +94,19 @@ En el AndroidManifest se declaran las actividades con la clase referida, en caso
 
 ![manifest](https://github.com/user-attachments/assets/6a1dee20-efbf-4077-ae89-eba9857d1fa8)
 
-En la carpeta VALUES creamos Themes.xml donde se declaran las barras de acción, que vienen a ser las barras superiores que aparecen en algunas pestañas.
+En la carpeta de recursos VALUES creamos Themes.xml donde se declaran las barras de acción, que vienen a ser las barras superiores que aparecen en algunas pestañas.
 
 ![temaslogin](https://github.com/user-attachments/assets/bf7ca899-ed8a-44a5-bd11-933b84824a56)
 
 
 https://github.com/user-attachments/assets/8ab40b93-2fbb-48c5-ae40-05f89cb8537d
 
---Pantalla de carga o activity_splash.xml
+--Pantalla de carga o activity_splash.xml--
 
 Tras implementar unas librerías la pantalla de carga se ve así.
 Se ha realizado con la librería SPLASH.
+Para agregar las animaciones hay que crear una carpeta de recursos de tipo anim.
+Dicha carpeta incluirá todas las animaciones que desees.
 
 Se crea la clase Splash.java y su layout correspondiente.
 
@@ -126,10 +128,41 @@ Contiene las imagenes, iconos y textos que aparecerán en la pantalla de carga.
 
 ![ivsplash](https://github.com/user-attachments/assets/6c07f364-42bc-420f-a2a9-58b3fcccd021)
 
+Para la tipografía hay que crear la carpeta de recursos de  tipo font.
+Dentro de esta carpeta irán las tipografías en forma de xml.
+
+![fuentessplash](https://github.com/user-attachments/assets/d61201d6-5cfa-4078-96d7-c0a672f8e5f9)
+
+
 También se producen cambios en el AndroidManifest.xml
-Se añaden las características del inicio de la aplacación.
+Se añaden las características del inicio de la aplicación.
 
 ![manifestsplash](https://github.com/user-attachments/assets/69770a0f-aead-409d-b7da-27e80b584ed6)
+
+
+
+También hemos creado la actividad profile que vendría a ser una pantalla con los datos de usuario.
+--activity_profile.xml--
+
+![profile](https://github.com/user-attachments/assets/324c2fde-49f9-4e94-aa0c-7ee15bb9c5a9)
+
+Ha sido realizada con 4 editexts y un logo.
+
+--Profile.java--
+En este caso, la clase no contiene nada, en un futuro se agregarán métodos y funcionalidades para hacer un uso de esta clase.
+
+
+Ahora le vamos a agregar funcionalidades a la barra superior mostrada en el Main.java, se realiza creando una carpeta de recursos de tipo menu.
+Dicha carpeta incluirá el tipo de menu y su estructura.
+En este caso hemos creado dos tipos de menu: Uno contextual o otro representa menu de la barra superior.
+
+
+
+
+
+
+
+
 
 
 
