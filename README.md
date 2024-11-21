@@ -161,6 +161,21 @@ En este caso hemos creado dos tipos de menu: Uno contextual o otro representa me
 ![menucontext](https://github.com/user-attachments/assets/a94d64da-a273-4b14-a26d-2b14b780e7f8)
 
 
+Contiene los items que apareceran en la barra superior. ShowAsAction es el atributo que permite elegir como se va a mostrar en pantalla el item, si hay un logo "ifRoom" significa que hay hueco para el logo que representa dicho item, en cambio, si es "never" no se representa con un logo, si no que muestra el título o simplemente 3 puntos.
+
+
+--menu_aptbar.xml--
+
+![appbar](https://github.com/user-attachments/assets/2c24a220-cd98-446b-bcbf-8790a9870253)
+
+
+
+En este caso hay un menu dentro del item, siginifica que al pulsar dicho item aparece el menu que contiene los items con distintas opciones.
+
+
+Para hacer que funcionen los menus, se configuran desde la clase donde se muesra, en este caso es Main.java
+
+--Main.java--
 
 
 
