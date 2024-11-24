@@ -177,12 +177,39 @@ Para hacer que funcionen los menus, se configuran desde la clase donde se muesra
 
 --Main.java--
 
+El codigo para configurar la barra de aplicaciones es el siguiente:
+
+![codigoappbar](https://github.com/user-attachments/assets/d3792f12-6640-4468-9af6-3ab00764469b)
+
+En este caso la barra luce así: 
+
+![barrasuperior](https://github.com/user-attachments/assets/7f62e940-12f9-44e2-b8ec-b13ace23bb89)
+
+Está compuesta por el título de la aplicación y dos logos: el primero representa la opción "Copy" y el segundo representa la opción "Settings" está representada mediante los tres puntos. Al pulsarlo aparece este menú:
+
+![appbaropciones](https://github.com/user-attachments/assets/290c989c-2ed8-46c8-8632-fe6a40454c7f)
+
+Las dos primeras opciones no tienen ningún funcionamiento pero al presionar la última opción saltará una ventana: 
+
+
+El codigo para configurar la barra contextual es el siguiente:
+
+
+![codigocontext](https://github.com/user-attachments/assets/f832a92b-4d02-42fc-bbda-af43d6163670)
 
 
 
 
 
 
+
+
+![barrasuperior](https://github.com/user-attachments/assets/c9d70218-607f-4613-a708-e36f7073810a)
+
+Tras la codificación, la pantalla luce así:
+
+
+![mainwebview](https://github.com/user-attachments/assets/e67e293c-a693-44c2-8c16-aca180431b5b)
 
 
 
