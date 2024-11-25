@@ -43,7 +43,7 @@ public class Main extends AppCompatActivity {
 
         ImageView mGirl = findViewById(R.id.foto);
 
-        TextView mycontext = (TextView) findViewById(R.id.txt_main);
+        TextView mycontext = (TextView) findViewById(R.id.txt_main  );
         registerForContextMenu(mycontext);
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
