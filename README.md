@@ -173,9 +173,31 @@ Contiene los items que apareceran en la barra superior. ShowAsAction es el atrib
 En este caso hay un menu dentro del item, siginifica que al pulsar dicho item aparece el menu que contiene los items con distintas opciones.
 
 
-Para hacer que funcionen los menus, se configuran desde la clase donde se muesra, en este caso es Main.java
+Para hacer que funcionen los menus, se configuran desde la clase donde se muestra, en este caso es Main.java
+
+
+--activity_main.xml--
+
+Se ha añadido un WebView que mostrará imágenes en el fondo de la actividad. Aparte de el uso de la librería SwipeRefreshLayout para poder actualizar la pantalla cada vez que se arrastra hacia abajo, la cual se implementa desde build.gradle.kts.
+
+![refreshywebview](https://github.com/user-attachments/assets/b65d7511-0fe5-4ac5-b7e0-961677ee786b)
+
 
 --Main.java--
+
+Para conseguir el efecto de arrastrar hacia abajo con SwipeRefreshLayout y que el WebView se actualice hay que hacer lo siguiente:
+
+Se declaran y se establecen métodos:
+
+![metodosswiperefreshwv](https://github.com/user-attachments/assets/0ca530e9-76f4-41a3-b8b6-bf9192405832)
+
+Se crea el método onRefresh() que mostrará un Snackbar, que viene siendo una notificación, que indica que la actualización se ha realizado.
+
+![metodoonrefresh](https://github.com/user-attachments/assets/3dea2ff7-be26-4877-b69c-8bd01edad06d)
+
+
+![snackbar](https://github.com/user-attachments/assets/cbbe1c3b-d58a-4d40-a9e6-26531651ea1b)
+
 
 El codigo para configurar la barra de aplicaciones es el siguiente:
 
@@ -189,7 +211,18 @@ Está compuesta por el título de la aplicación y dos logos: el primero represe
 
 ![appbaropciones](https://github.com/user-attachments/assets/290c989c-2ed8-46c8-8632-fe6a40454c7f)
 
+Al pulsar cualquiera de los dos saldrá un toast o notificación:
+
+![toast](https://github.com/user-attachments/assets/d7c8c7bb-d999-4fb2-a756-81b5ba68ccfb)
+
+
 Las dos primeras opciones no tienen ningún funcionamiento pero al presionar la última opción saltará una ventana: 
+
+
+![alerta](https://github.com/user-attachments/assets/eb7b01b4-0e25-4274-a051-39990e9efaf4)
+
+
+En este caso, solo sale una opción, "Scrolling" al pulsarla te lleva a Profile.java, contiene básicamente un intent.
 
 
 El codigo para configurar la barra contextual es el siguiente:
@@ -197,19 +230,17 @@ El codigo para configurar la barra contextual es el siguiente:
 
 ![codigocontext](https://github.com/user-attachments/assets/f832a92b-4d02-42fc-bbda-af43d6163670)
 
+Tiene las opciones "Copy" y "Download" que al pulsarlas mostrará un toast.
+
+En pantalla se ve así:
+
+![copydownload](https://github.com/user-attachments/assets/6a6453cb-8d66-4bcf-88b9-6ab17e534d01)
 
 
-
-
-
-
-
-![barrasuperior](https://github.com/user-attachments/assets/c9d70218-607f-4613-a708-e36f7073810a)
-
-Tras la codificación, la pantalla luce así:
-
+Tras la codificación, la pantalla de Main.java luce así:
 
 ![mainwebview](https://github.com/user-attachments/assets/e67e293c-a693-44c2-8c16-aca180431b5b)
+
 
 
 
