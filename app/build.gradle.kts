@@ -43,6 +43,10 @@ dependencies {
 
     implementation(libs.swiperefreshlayout)
 
+    implementation(libs.okhttp)
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit)
+
     implementation(libs.github.glide)
     annotationProcessor(libs.glide.compiler)
     implementation(libs.lottie)
