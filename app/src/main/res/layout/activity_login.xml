@@ -24,7 +24,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/pantalla"
         app:layout_constraintStart_toStartOf="parent"
