@@ -108,6 +108,16 @@
         app:strokeColor="@color/white"
         android:textColor="@color/white"
         />
+    <ImageView
+        android:id="@+id/homero"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/homer_simpson"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/buttoninverse" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

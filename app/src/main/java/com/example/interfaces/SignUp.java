@@ -2,6 +2,7 @@ package com.example.interfaces;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,6 +28,11 @@ public class SignUp extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageView homero = findViewById(R.id.homero);
+        Glide.with(this)
+                .load(R.drawable.homer_simpson)
+                .into(homero);
 
         ImageView mGirl = findViewById(R.id.boy);
 
