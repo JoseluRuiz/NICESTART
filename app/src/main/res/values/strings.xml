@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">interfaces</string>
+    <string name="app_name" translatable="false">interfaces</string>
+    <string name="cancel">CANCEL</string>
 </resources>
