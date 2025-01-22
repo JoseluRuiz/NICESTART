@@ -10,7 +10,10 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.First.AppBarOverlay">
+        android:theme="@style/Theme.First.AppBarOverlay"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@id/view_pager"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/title"
@@ -18,7 +21,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
             android:text="@string/app_name"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
@@ -41,7 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:menu="@menu/bottom_navigation_menu"
-        />
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="@id/view_pager"/>
 
     <!--        android:foregroundTint="@color/bottomselector"-->
     <!--    style="@style/BottomNavigation"-->

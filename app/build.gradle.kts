@@ -46,4 +46,5 @@ dependencies {
     implementation(libs.github.glide)
     annotationProcessor(libs.glide.compiler)
     implementation(libs.lottie)
+
 }

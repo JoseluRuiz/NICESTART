@@ -12,7 +12,7 @@
         android:theme="@style/Base.Theme.Interfaces">
         <activity
             android:name=".MainBN"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mainbab"
             android:exported="true" />
