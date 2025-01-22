@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Interfaces">
         <activity
+            android:name=".MainBN"
+            android:exported="false" />
+        <activity
+            android:name=".mainbab"
+            android:exported="true" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity
