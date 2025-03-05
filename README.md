@@ -241,6 +241,73 @@ Tras la codificación, la pantalla de Main.java luce así:
 
 ![mainwebview](https://github.com/user-attachments/assets/e67e293c-a693-44c2-8c16-aca180431b5b)
 
+-- activity_mainbab.xml --
+
+![cod_mainbab](https://github.com/user-attachments/assets/a6ff27a4-e045-4082-85d8-365c748b0e70)
+
+Esta clase contiene un cordinador con una BottomAppBar (una barra inferior para seleccionar diferentes opciones a elegir), encima de dicha barra se encuentra un FAB (floating action button). Si el diseño del FAB quieres que sea en modo "cuna" se haría con fabAnchorMode y luego ya se cambian las propiedades en relación a la cuna.
+La barra contiene el atributo menu. Menu sirve para plasmar la estructura de un menu dentro de una barra y mostrar los iconos. La estructura del menu es la misma a la que hemos realiazado anteriormente.
+
+
+![appbar](https://github.com/user-attachments/assets/9ef924e9-35cb-431d-9eb4-9efcd7fedf57)
+
+
+--MainBab.java --
+
+Las clase Java de mainbab contiene lo siguiente: 
+
+![javaappbar](https://github.com/user-attachments/assets/52b52eff-be51-4544-a72d-8306376fca01)
+
+La funcionalidad de este código es sencilla, si pulsas en los botones, te mostrará unas notificaciones sobre lo que has pulsado. El único inconveniente es que no se pueden poner los iconos a la izquierda.
+
+Tras hacer todo, debería quedarte algo así:
+
+![imagendeappbar](https://github.com/user-attachments/assets/c02b89e2-1f01-4763-b19c-d97907c96b01)
+
+
+-- activity_main_bn.xml --
+
+Esta actividad está compuesta por fragmentos. Es decir, la barra está en una actividad "principal" donde se irán mostrando los diferentes fragmentos, ya sea deslizando de un lado a otro o clicando sobre un icono.
+
+![cod_mainbn](https://github.com/user-attachments/assets/bb67bf6a-b3fe-46a5-9563-a3f4097b8755)
+
+
+Este código contiene un AppbarLayout (una barra inferior para seleccionar diferentes opciones a elegir), dentro de esta barra está contenido hay TabLayout que permite hacer ese cambio entre fragmentos.
+A esta actividad se le suma un ViewPager y un BottomNavigationView, sirven para la estética, control y funcionalidad de la barra.
+
+
+Dentro de la etiqueta BottomNavigationView, se encuentra el atributo menu. Menu permite mostrar la estructura de un menu ya formado en la carpeta menus.
+
+![bottomnavmenu](https://github.com/user-attachments/assets/de490a62-0e44-4213-8b9e-9748d0e02691)
+
+Este es el contenido que tiene la clase bottom_navigation_view.xml, que como los otros menús, sigue la misma estructura.
+
+-- MainBN.java --
+
+Primero se declaran las variables que se vayan a utilizar.
+
+![declaracionvariablesmainbn](https://github.com/user-attachments/assets/7c989c9e-8158-463e-b1cf-6a9c71f78169)
+
+A continuación, se le da funcionalidad a las distintas opciones del menú, cada vez que cliques a un ícono te salta una notificación y se cambia a su respectivo fragmento.
+
+![opcionesmainbn](https://github.com/user-attachments/assets/becd99c3-738c-4aaf-8d9c-26547fe44dfd)
+
+El viewpager es el que permite la transición entre fragmentos, cabe recalcar que es recomendable crear una carpeta "Fragments" para tener todos los fragmentos apartados de las actividades y los adaptadores de dichos fragmentos en otro paquete a su vez.
+Los fragmentos a mostrar en este caso, no tienen ningún contenido, por lo tanto no hace falta modificar nada del código. Lo único que hay que modificar son los adaptadores.
+
+
+![estructurafragments](https://github.com/user-attachments/assets/f4f90fde-f993-4311-b99a-43bd3bb87557)
+
+![helpviewpager](https://github.com/user-attachments/assets/b967714f-0084-4591-9530-20a2381c455b) 
+
+![sectionpageadapter](https://github.com/user-attachments/assets/4774c112-59df-45af-b05f-411e7175b6e5)
+
+Al final, los fragmentos deberían lucir así: 
+
+
+![imagenfragment1](https://github.com/user-attachments/assets/ed8be37c-9672-4ebe-8134-b477902f27a2)        ![imagenfragment2](https://github.com/user-attachments/assets/8c5d8022-35ac-4309-b1f8-0f97a96a1040)
+
+
 
 
 
