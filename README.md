@@ -298,7 +298,11 @@ Los fragmentos a mostrar en este caso, no tienen ningún contenido, por lo tanto
 
 ![estructurafragments](https://github.com/user-attachments/assets/f4f90fde-f993-4311-b99a-43bd3bb87557)
 
+
+
 ![helpviewpager](https://github.com/user-attachments/assets/b967714f-0084-4591-9530-20a2381c455b) 
+
+
 
 ![sectionpageadapter](https://github.com/user-attachments/assets/4774c112-59df-45af-b05f-411e7175b6e5)
 
@@ -308,6 +312,59 @@ Al final, los fragmentos deberían lucir así:
 ![imagenfragment1](https://github.com/user-attachments/assets/ed8be37c-9672-4ebe-8134-b477902f27a2)        ![imagenfragment2](https://github.com/user-attachments/assets/8c5d8022-35ac-4309-b1f8-0f97a96a1040)
 
 
+
+También hemos hecho cambios para la adaptabilidad del usuario, los colores cambian al cambiar de idioma y de tema en el telefono.
+
+Para el idioma, vamos a nuestra clase strings.xml, le damos click derecho y seleccionamos la opción Open Translations Editor.
+Arriba a la izquierda habrá un más, ahí seleccionas el idioma. 
+
+![translationeditor](https://github.com/user-attachments/assets/e30b6fd1-bad9-46f7-b388-684a041b3114)
+
+Al seleccionar idioma, aparecerá esto en la carpeta values: 
+
+![strings](https://github.com/user-attachments/assets/87592db5-5b5f-4c8b-be33-b002b24adbfe)
+
+
+Tenemos el string normal: 
+
+![stringnormal](https://github.com/user-attachments/assets/4652f2b8-611e-411c-91c1-6ca69b87c2e5)
+
+Y en la nueva clase string creada en la cual aparece una bandera del país del idioma: 
+
+![stringaleman](https://github.com/user-attachments/assets/b0defba6-7250-4cb4-b9d5-109e07c4ae8d)
+
+El resultado se verá así:
+
+
+![pantallastringnormal](https://github.com/user-attachments/assets/1a723b7e-d9f5-4b16-904c-58aff64993ce)      ![pantallastringcambiado](https://github.com/user-attachments/assets/f20ddec6-7a85-4d9a-a680-7fcf85f1913e)
+
+
+En cuanto al modo, se pueden controlar los colores de los elementos del proyecto.
+Se crea una archivo colors (night) dentro de la carpeta colors. De esta forma: 
+
+![crearnightmode](https://github.com/user-attachments/assets/4be16484-c8cd-4278-a3ce-d1688b50b26c)
+
+
+Dentro de ese archivo, se modifican los colores a tu gusto. En mi caso ha quedado así: 
+
+
+![temaclaro](https://github.com/user-attachments/assets/ebb18afc-814b-4f0f-9b0d-57da5214fff5)    ![temaoscuro](https://github.com/user-attachments/assets/8c8c40bd-3edc-461c-b8e6-0dd9308dae32)
+
+
+
+
+Para finalizar haremos el landscape, es decir orientación horizontal.
+
+Para crearlo accedemos al xml al que se lo queremos aplicar y en la actividad presionamos su nombre y creamos el landscape.
+
+![image](https://github.com/user-attachments/assets/aa21dcef-684b-47e3-99f2-f8080e5795a0)
+
+Se creará una carpeta de esa actividad, una en orientación vertical y otra en orientación horizontal.
+
+El resultado será así: 
+
+
+![orientacionhorizontal](https://github.com/user-attachments/assets/db18bb0c-0eaa-4970-8c38-bf82cf9226d3)
 
 
 
